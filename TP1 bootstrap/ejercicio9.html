@@ -1,38 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
-rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
-crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../mediaqueri.css" />
     <title>Ejercicio 9</title>
-</head>
-<body>
-  <div class="container-fluid">
+  </head>
+  <body>
+    <div class="container">
       <!-- header -->
-<div class="row">
-    <div class="col" style="background-color: green;">
-    <p style="font-size: 30px;">header</p>
-    </div>
-</div>
-<hr>
-<!-- contenido -->
-<div class="row mh-100" style="height:100%; background-color:red">
-    <div class="col-lg-4 col-md-6 col-sm-12 h-100" style=" border: 2px solid;">
-        <p style="font-size: 30px; text-align: center;">1</p>
+      <div class="row">
+        <div class="col" style="background-color: green">
+          <p style="font-size: 30px">header</p>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 h-100" style=" border: 2px solid; text-align: center;">
-            <p style="font-size: 30px;">2</p>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 h-100" style=" border: 2px solid; text-align: center;">
-                <p style="font-size: 30px;">3</p>
-                </div>
-
-
-</div>
-</div> 
-  
-</body>
+      </div>
+      <hr />
+      <!-- contenido -->
+      <div id="row1" class="row">
+        <div
+          id="cont1"
+          class="col-lg-4 col-md-6 col-sm-12"
+          style="border: 2px solid"
+        >
+          <p style="font-size: 30px; text-align: center">1</p>
+        </div>
+        <div
+          id="cont2"
+          class="col-lg-4 col-md-6 col-sm-12"
+          style="border: 2px solid; text-align: center"
+        >
+          <p style="font-size: 30px">2</p>
+        </div>
+        <div
+          id="cont3"
+          class="col-lg-4 col-md-12 col-sm-12"
+          style="border: 2px solid; text-align: center"
+        >
+          <p style="font-size: 30px">3</p>
+        </div>
+      </div>
+      
+        <div id="rowfooter" class="row">
+          <div
+            id="foot1"
+            class="col"
+            style="border: 1px solid"
+          >
+            <p style="font-size: 30px;">footer1</p>
+          </div>
+          <div
+            id="foot2"
+            class="col"
+            style="border: 1px solid;"
+          >
+            <p style="font-size: 30px">footer2</p>
+          </div>
+        </div>
+      
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
 </html>
