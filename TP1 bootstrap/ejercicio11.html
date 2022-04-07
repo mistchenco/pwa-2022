@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+crossorigin="anonymous">
+    <title>Ejercicio 11</title>
+    <style>
+        #imgs img{
+            width: 100%;
+        }
+        p:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col" style="border: solid 1px black">Nuestro Staff</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12" style="border: solid 1px black">col-lg-12</div>
+        </div>
+        <div class="row" id="imgs" style="border: solid 1px black">
+            <div class="col-1"><img src="img/staff/dave bautista.jpg"></div>
+            <div class="col-1"><img src="img/staff/dwayne jhonson.jpg"></div>
+            <div class="col-1"><img src="img/staff/jason statham.jpg"></div>
+            <div class="col-1"><img src="img/staff/jhon cena.jpg"></div>
+            <div class="col-1"><img src="img/staff/terry crews.jpg"></div>
+            <div class="col-1"><img src="img/staff/dave bautista.jpg"></div>
+            <div class="col-1"><img src="img/staff/dwayne jhonson.jpg"></div>
+            <div class="col-1"><img src="img/staff/jason statham.jpg"></div>
+            <div class="col-1"><img src="img/staff/jhon cena.jpg"></div>
+            <div class="col-1"><img src="img/staff/terry crews.jpg"></div>
+            <div class="col-1"><img src="img/staff/dave bautista.jpg"></div>
+            <div class="col-1"><img src="img/staff/dwayne jhonson.jpg"></div>
+        </div>
+        <div class="row" style="border: 1px solid black;">
+            <div class="col-sm-4">
+                <p>Jorge</p>
+                <p id="btn-luis">Luis</p>
+                <p id="btn-diego">Diego</p>
+                <p>Roberto</p>
+                <p>Jorge</p>
+                <p>Luis</p>
+                <p>Diego</p>
+                <p>Roberto</p>
+                <p>Jorge</p>
+                <p>Luis</p>
+                <p>Diego</p>
+                <p>Roberto</p>
+            </div>
+            <div class="col-sm-8" ><img src="" id="bigImg"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8" style="border: solid 1px black">tabla</div>
+            <div class="col-sm-4" style="border: solid 1px black" id="parrafo"></div>
+        </div>
+    </div>
+
+
+    <script>
+        var imagen = document.getElementById("bigImg");
+        function luis(){
+            document.getElementById("parrafo").innerHTML="este es luis";
+            imagen.src="img/staff/jason statham.jpg";
+        }
+        function diego(){
+            document.getElementById("parrafo").innerHTML="este es diego";
+            imagen.src="img/staff/jhon cena.jpg";
+        }
+        document.getElementById("btn-luis").onclick=function(){luis()};
+        document.getElementById("btn-diego").onclick=function(){diego()};
+    </script>
+</body>
+</html>
