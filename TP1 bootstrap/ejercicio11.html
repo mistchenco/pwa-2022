@@ -92,47 +92,31 @@ crossorigin="anonymous">
             <div class="col" id="btn-maquina12"><img src="img/maquinas/maquina12.png"></div>
         </div>
         <div class="row" style="border: 1px solid black;">
-            <div class="col-sm-4">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                      <a id="txt-maquina1" class="nav-link">Remo alto</a>
-                    </li>
-                    <li class="nav-item">
-                      <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
-                    </li>
-                    <li class="nav-item">
-                      <a id="txt-maquina3" class="nav-link">Banco Plano</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="txt-maquina4" class="nav-link">Smith</a>
-                      </li>
-                      <li class="nav-item">
-                        <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
-                      </li>
-                      <li class="nav-item">
-                        <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
-                      </li>
-                      <li class="nav-item">
-                        <a id="txt-maquina7" class="nav-link">Eliptico</a>
-                      </li>
-                      <li class="nav-item">
-                        <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
-                      </li>
-                      <li class="nav-item">
-                        <a id="txt-maquina9" class="nav-link">Poleas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a id="txt-maquina10"  class="nav-link">Barras</a>
-                      </li>
-                      <li class="nav-item">
-                        <a id="txt-maquina11" class="nav-link">Core Bag</a>
-                      </li>
-                      <li class="nav-item">
-                        <a id="txt-maquina12" class="nav-link">Remo</a>
-                      </li>
-                  </ul>
+          <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="maquina1" data-toggle="list" href="#list1" role="tab" aria-controls="list1">Remo alto</a>
+              <a class="list-group-item list-group-item-action" id="maquina2" data-toggle="list" href="#list2" role="tab" aria-controls="list2">Press de Hombros</a>
+              <a class="list-group-item list-group-item-action" id="maquina3" data-toggle="list" href="#list3" role="tab" aria-controls="list3">Banco Plano</a>
+              <a class="list-group-item list-group-item-action" id="maquina4" data-toggle="list" href="#list4" role="tab" aria-controls="list4">Smith</a>
+              <a class="list-group-item list-group-item-action" id="maquina5" data-toggle="list" href="#list5" role="tab" aria-controls="home">Bicicleta Recostada</a>
+              <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Prensa 90ª</a>
+              <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Eliptico</a>
+              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Arc. Trainer</a>
+              <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Poleas</a>
+              <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Barras</a>
+              <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">CoreBag</a>
+              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Remo</a>
             </div>
-            <div class="col-sm-8" ><img src="" id="bigImg"></div>
+          </div>
+          <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list1" role="tabpanel" aria-labelledby="maquina1">asdasdas</div>
+              <div class="tab-pane fade" id="list2" role="tabpanel" aria-labelledby="maquina2">ffff</div>
+              <div class="tab-pane fade" id="list3" role="tabpanel" aria-labelledby="maquina3">gggg</div>
+              <div class="tab-pane fade" id="list4" role="tabpanel" aria-labelledby="maquina5">...</div>
+            </div>
+          </div>
+        </div>
         </div>
         <div class="row">
             <div class="col-sm-8" style="border: solid 1px black">
@@ -153,165 +137,45 @@ crossorigin="anonymous">
             </div>
             <div class="col-sm-4" style="border: solid 1px black" id="parrafo"></div>
         </div>
-    </div>
+    
 
 
-    <script>
-        // Variables que trabaja cada funcion
-        var imagen = document.getElementById("bigImg");
-        var tipo = document.getElementById("tipo");
-        var musc = document.getElementById("musc");
-        var detalle = document.getElementById("detalle");
-
-        // Funciones. En base al elemento elegido en la lista, se completa la información de las variables.
-        function maquina1(){
-            limpiar();
-            document.getElementById("parrafo").innerHTML="La máquina High Row Plate Loaded de Signature Series de Life Fitness permite realizar movimientos divergentes e Iso-Lateral para realizar el ejercicio en sentido descendente de forma natural y fomentar el fortalecimiento compensado.";
-            imagen.src="img/maquinas/maquina1.png";
-            var texto= document.getElementById("txt-maquina1");
-            colorea(texto);
-            tipo.innerHTML="Fuerza, resistencia.";
-            musc.innerHTML="Espalda";
-            detalle.innerHTML="Resistencia inicial 1kg (por brazo). 4 colgadores de pesas estándar. Capacidad de disco 4-25kg (por brazo).";
-        }
-        function maquina2(){
-            limpiar();
-            document.getElementById("parrafo").innerHTML="El banco Olympic Military Bench de Signature Series incorpora un soporte de protección moldeado de uretano que reduce el ruido y evita que la barra se desgaste con el fin de que el entrenamiento resulte estable y preciso. Tiene un sistema de soporte frontal y trasero para ofrecer más variedad. Los bancos y racks de Signature Series de calidad superior se integran a la perfección con otros equipos de la misma línea para completar una familia de productos dirigidos al entrenamiento de fuerza de alta calidad.";
-            imagen.src="img/maquinas/maquina2.png";
-            var texto= document.getElementById("txt-maquina2");
-            colorea(texto);
-            tipo.innerHTML="Fuerza, resistencia.";
-            musc.innerHTML="Hombros, espalda, triceps.";
-            detalle.innerHTML="Peso máximo de entrenamiento	227kg";
-        }
-        function maquina3(){
-            limpiar();
-            document.getElementById("parrafo").innerHTML="El banco Olympic Flat Bench de Signature Series incorpora un soporte de protección moldeado de uretano que reduce el ruido y evita que la barra se desgaste. Los bancos y racks de Signature Series de calidad superior se integran a la perfección con otros equipos de la misma línea para completar una familia de productos dirigidos al entrenamiento de fuerza de alta calidad.";
-            imagen.src="img/maquinas/maquina3.png";
-            var texto= document.getElementById("txt-maquina3");
-            colorea(texto);
-            tipo.innerHTML="Fuerza.";
-            musc.innerHTML="Pectorales, triceps.";
-            detalle.innerHTML="Peso máximo de entrenamiento 227kg.";
-        }
-        function maquina4(){
-            limpiar();
-            document.getElementById("parrafo").innerHTML="La trayectoria de la barra Smith Machine sigue un ángulo de siete grados, igual al de los movimientos de halterofilia, para poder trabajar como los halterófilos.";
-            imagen.src="img/maquinas/maquina4.png";
-            var texto= document.getElementById("txt-maquina4");
-            colorea(texto);
-            tipo.innerHTML="Fuerza, resistencia.";
-            musc.innerHTML="Piernas, gluteos, hombros.";
-            detalle.innerHTML="Peso máximo de entrenamiento 285kg. 8 colgadores de pesas.";
-        }
-        function maquina5(){
-            limpiar();
-            document.getElementById("parrafo").innerHTML="La bicicleta Lifecycle de Platinum Club Series trae un equipo de ejercicio resistente de calidad de un centro fitness a su hogar. La abundancia de opciones de entretenimiento y de actividades ofrece interacción y motivación. El mecanismo abierto y escalonado facilita subirse y bajarse, y el asiento Comfort Curve asegura un pedaleo cómodo durante el transcurso de su rutina de ejercicio hogareña.";
-            imagen.src="img/maquinas/maquina5.png";
-            var texto= document.getElementById("txt-maquina5");
-            colorea(texto);
-            tipo.innerHTML="Aeróbico.";
-            musc.innerHTML="Piernas, gluteos, cuádriceps e isquiotibiales.";
-            detalle.innerHTML="Telemetria Polar. Monitor de frecuencia cardíaca digital con DSP. Peso maximo del usuario 181kg. 26 niveles de resistencia."
-        }
-        function maquina6(){
-            limpiar();
-            document.getElementById("parrafo").innerHTML="La máquina Seated Leg Press de Insignia Series presenta una posición erguida que resulta idónea para principiantes y usuarios que necesitan acondicionamiento. La fuerza se transmite a través de las caderas al press de piernas, eliminando la compresión vertebral. El equipo de fuerza con selector de Insignia Series Premium, como este press de piernas, incorpora toques inteligentes y elementos de diseño que hacen que el uso de esta máquina resulte natural y una experiencia memorable.";
-            imagen.src="img/maquinas/maquina6.png";
-            var texto= document.getElementById("txt-maquina6");
-            colorea(texto);
-            tipo.innerHTML="Fuerza, resistencia.";
-            musc.innerHTML="Piernas y gluteos.";
-            detalle.innerHTML="Peso máximo del usuario 136kg. Columna de pesas estándar 167kg, columna de pesas pesadas 197kg.";
-        }
-        function maquina7(){
-            limpiar();
-            document.getElementById("parrafo").innerHTML="La máquina elíptica E5 de zancada ajustable es una máquina de ejercicios doméstica versátil para una rutina de ejercicios para todo el cuerpo. La zancada puede ajustarse de 45 a 60 cm (18 in a 24 in) con tan solo apretar un botón, mientras que las manillas de agarre múltiple permiten a los usuarios trabajar distintos grupos de músculos. La trayectoria elíptica suave y natural de la máquina elíptica Cross-Trainer E5 se basa en años de investigación biomecánica.";
-            imagen.src="img/maquinas/maquina7.png";
-            var texto= document.getElementById("txt-maquina7");
-            colorea(texto);
-            tipo.innerHTML="Aeróbico.";
-            musc.innerHTML="Piernas, gluteos, espalda.";
-            detalle.innerHTML="Sensor de frecuencia cardíaca. 20 niveles de resistencia. Peso máximo del usuario 182kg.";
-        }
-        function maquina8(){
-            limpiar();
-            document.getElementById("parrafo").innerHTML=" Arc Trainer es una máquina elíptica de movimiento alternativo versátil que atrae a una amplia gama de deportistas. Los 21 niveles de inclinación permiten a los usuarios elegir el tipo de rutina de ejercicio que prefieren y los diferentes grupos de músculos que quieren trabajar. La Arc Trainer es verdaderamente una máquina para cardio 3 en 1. El amplio rango de inclinación brinda a los usuarios la capacidad de hacer deslizamiento (pendientes más bajas), zancada (pendientes medias) o escalada (pendientes más altas).";
-            imagen.src="img/maquinas/maquina8.png";
-            var texto= document.getElementById("txt-maquina8");
-            colorea(texto);
-            tipo.innerHTML="Aeróbico.";
-            musc.innerHTML="Piernas y gluteos.";
-            detalle.innerHTML="100 niveles de resistencia. Manillas móviles con agarre múltiple y controles de resistencia remotos, agarres para posición de viaje.";
-        }
-        function maquina9(){
-            limpiar();
-            document.getElementById("parrafo").innerHTML="Cable Column de Signature Series presenta agarraderas duales para ofrecer múltiples opciones de entrenamiento. La tecnología Cable Motion™ emplea modos de movimiento definidos por el usuario que permiten una variedad casi infinita de opciones de entrenamiento de fuerza que contribuyen a desarrollar el equilibrio, la estabilidad y la potencia.";
-            imagen.src="img/maquinas/maquina9.png";
-            var texto= document.getElementById("txt-maquina9");
-            colorea(texto);
-            tipo.innerHTML="Fuerza, resistencia.";
-            musc.innerHTML="Pectorales, espalda, hombros.";
-            detalle.innerHTML="";
-        }
-        function maquina10(){
-            limpiar();
-            document.getElementById("parrafo").innerHTML="Signature Series Handle Rack ofrece seis ganchos para colgar accesorios, tres soportes para almacenamiento de barra pequeña y una bandeja de accesorios para otros artículos. También tiene protectores de uretano moldeado que preservan la moldura de marcas de pintura y arañazos. Los asientos y rejillas premium Signature Series se integran a la perfección con otros equipos de la línea para completar una familia de productos de entrenamiento de fuerza de alta calidad.";
-            imagen.src="img/maquinas/maquina10.png";
-            var texto= document.getElementById("txt-maquina10");
-            colorea(texto);
-            tipo.innerHTML="Fuerza, resistencia.";
-            musc.innerHTML="Espalda, triceps.";
-            detalle.innerHTML="";
-        }
-        function maquina11(){
-            limpiar();
-            document.getElementById("parrafo").innerHTML="Las bolsas básicas de Life Fitness son excelentes para el acondicionamiento y el entrenamiento de fuerza con compuestos multifuncionales. Comúnmente utilizado para sentadillas frontales, remo vertical, cargada y prensa, extensiones de tríceps, giros rusos, así como estocadas, sentadillas y prensas en un circuito funcional. Las bolsas básicas tienen varias asas que las hacen fáciles de usar para una amplia variedad de ejercicios.";
-            imagen.src="img/maquinas/maquina11.png";
-            var texto= document.getElementById("txt-maquina11");
-            colorea(texto);
-            tipo.innerHTML="Fuerza, resistencia.";
-            musc.innerHTML="Piernas, espalda, abdominales.";
-            detalle.innerHTML="Peso de 5 a 20 kg";
-        }
-        function maquina12(){
-            limpiar();
-            document.getElementById("parrafo").innerHTML="El remo de Insignia Series permite realizar movimientos divergentes para crear un movimiento descendente natural. El equipo de fuerza con selectores de Insignia Series Premium incorpora toques inteligentes y elementos de diseño que hacen que el uso de esta máquina resulte natural y con una experiencia memorable.";
-            imagen.src="img/maquinas/maquina12.png";
-            var texto= document.getElementById("txt-maquina12");
-            colorea(texto);
-            tipo.innerHTML="Fuerza, resistencia.";
-            musc.innerHTML="Espalda.";
-            detalle.innerHTML="Peso máximo del usuario 136kg. Columna de pesas estándar 130kg.";
-        }
-
-        //Funcion que cambia el estilo del texto en base a la opcion seleccionada
-        function colorea(texto){
-            texto.style.color="red";
-            texto.style.fontWeight="bold";
-        }
-        //Funcion para reestablecer el estilo del texto
-        function limpiar(){
-          var equipos=document.getElementsByClassName("nav-link");
-          for(var x=0;x<equipos.length;x++){
-            equipos[x].style.color="black";
-            equipos[x].style.fontWeight="normal";
-          }
-        }
-
-        // Evento onclick llama a la funcion
-        document.getElementById("btn-maquina1").onclick=function(){maquina1()};
-        document.getElementById("btn-maquina2").onclick=function(){maquina2()};
-        document.getElementById("btn-maquina3").onclick=function(){maquina3()};
-        document.getElementById("btn-maquina4").onclick=function(){maquina4()};
-        document.getElementById("btn-maquina5").onclick=function(){maquina5()};
-        document.getElementById("btn-maquina6").onclick=function(){maquina6()};
-        document.getElementById("btn-maquina7").onclick=function(){maquina7()};
-        document.getElementById("btn-maquina8").onclick=function(){maquina8()};
-        document.getElementById("btn-maquina9").onclick=function(){maquina9()};
-        document.getElementById("btn-maquina10").onclick=function(){maquina10()};
-        document.getElementById("btn-maquina11").onclick=function(){maquina11()};
-        document.getElementById("btn-maquina12").onclick=function(){maquina12()};  
-    </script>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
