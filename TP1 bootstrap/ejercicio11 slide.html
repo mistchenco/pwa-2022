@@ -4,44 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 11</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
 rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
 crossorigin="anonymous">
-<style>
-    .nav-link img{
-        width: 100%;
-        cursor: pointer;
-    }
-    .carousel{
-        width: 800px;
-        border: 1px solid blue;
-    }
-    .tab-pane a{
-        margin-bottom: -8px;
-    }
-    .carousel-control-prev-icon, .carousel-control-next-icon{
-        background-color: blue;
-    }
-    @media (max-width:575px){
-        .carousel{
-            width: 400px;
-        }
-        .flex-column{
-            display: none;
-        }
-    }
-    @media (max-width:767px){
-        .carousel{
-            width: 500px;
-        }
-    }
-    @media (max-width:991px){
-        .carousel{
-            width: 600px;
-        }
-    }
-</style>
+  <link rel="stylesheet" href="ejercicio11.css">
 </head>
 <body>
 <div class="container mb-5" id="carrusel">
@@ -57,42 +24,47 @@ crossorigin="anonymous">
                 </li>
                 <li class="col nav-item">
                     <a class="nav-link" data-toggle="tab" href="#opcion3"><img class="d-block w-100" src="img/maquinas/maquina3.png" alt="First slide"></a>
-                </li>
-                <li class="col nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#opcion4"><img class="d-block w-100" src="img/maquinas/maquina4.png" alt="First slide"></a>
-                </li>
+                </li>                
             </ul>
           </div>
           <div class="carousel-item">
             <ul class="nav">
+                <li class="col nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#opcion4"><img class="d-block w-100" src="img/maquinas/maquina4.png" alt="First slide"></a>
+                </li>
                 <li class="col nav-item">
                     <a class="nav-link" data-toggle="tab" href="#opcion5"><img class="d-block w-100" src="img/maquinas/maquina5.png" alt="First slide"></a>
                 </li>
                 <li class="col nav-item">
                     <a class="nav-link" data-toggle="tab" href="#opcion6"><img class="d-block w-100" src="img/maquinas/maquina6.png" alt="First slide"></a>
-                </li>
-                <li class="col nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#opcion7"><img class="d-block w-100" src="img/maquinas/maquina7.png" alt="First slide"></a>
-                </li>
-                <li class="col nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#opcion8"><img class="d-block w-100" src="img/maquinas/maquina8.png" alt="First slide"></a>
-                </li>
+                </li>                
             </ul>
           </div>
           <div class="carousel-item">
             <ul class="nav">
                 <li class="col nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#opcion7"><img class="d-block w-100" src="img/maquinas/maquina7.png" alt="First slide"></a>
+                </li>
+                <li class="col nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#opcion8"><img class="d-block w-100" src="img/maquinas/maquina8.png" alt="First slide"></a>
+                </li>
+                <li class="col nav-item">
                     <a class="nav-link" data-toggle="tab" href="#opcion9"><img class="d-block w-100" src="img/maquinas/maquina9.png" alt="First slide"></a>
                 </li>
-                <li class="col nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#opcion10"><img class="d-block w-100" src="img/maquinas/maquina10.png" alt="First slide"></a>
-                </li>
-                <li class="col nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#opcion11"><img class="d-block w-100" src="img/maquinas/maquina11.png" alt="First slide"></a>
-                </li>
-                <li class="col nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#opcion12"><img class="d-block w-100" src="img/maquinas/maquina12.png" alt="First slide"></a>
-                </li>
+                
+            </ul>
+          </div>
+          <div class="carousel-item">
+            <ul class="nav">
+              <li class="col nav-item">
+                <a class="nav-link" data-toggle="tab" href="#opcion10"><img class="d-block w-100" src="img/maquinas/maquina10.png" alt="First slide"></a>
+              </li>
+              <li class="col nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#opcion11"><img class="d-block w-100" src="img/maquinas/maquina11.png" alt="First slide"></a>
+              </li>
+              <li class="col nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#opcion12"><img class="d-block w-100" src="img/maquinas/maquina12.png" alt="First slide"></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -116,46 +88,55 @@ crossorigin="anonymous">
                     <div class="row">
                         <div class="col-sm-4">
                             <!-- lista -->
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                  <a id="txt-maquina1" class="nav-link" style="color: red; font-weight: bold;">Remo alto</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina3" class="nav-link">Banco Plano</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="txt-maquina4" class="nav-link">Smith</a>
+                            <div class="navbar navbar-expand-sm navbar-light bg-light">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto flex-column">
+                                  <li class="nav-item">
+                                    <a id="txt-maquina1" class="nav-link" style="color: red; font-weight: bold;">Remo alto</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    <a id="txt-maquina3" class="nav-link">Banco Plano</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina7" class="nav-link">Eliptico</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina9" class="nav-link">Poleas</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina10"  class="nav-link">Barras</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina11" class="nav-link">Core Bag</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina12" class="nav-link">Remo</a>
-                                  </li>
-                              </ul>
+                                      <a id="txt-maquina4" class="nav-link">Smith</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina7" class="nav-link">Eliptico</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina9" class="nav-link">Poleas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina10"  class="nav-link">Barras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina11" class="nav-link">Core Bag</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina12" class="nav-link">Remo</a>
+                                    </li>
+                                </ul>
+                              </div>
+                                
+                            </div>
+                            
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 img-grande">
                             <!-- imagen -->
                             <img src="img/maquinas/maquina1.png">
                         </div>
@@ -189,7 +170,12 @@ crossorigin="anonymous">
                   <div class="tab-pane" id="opcion2">
                     <div class="row">
                         <div class="col-sm-4">
-                            <ul class="nav flex-column">
+                          <div class="navbar navbar-expand-sm navbar-light bg-light">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav me-auto flex-column">
                                 <li class="nav-item">
                                   <a id="txt-maquina1" class="nav-link" >Remo alto</a>
                                 </li>
@@ -227,12 +213,15 @@ crossorigin="anonymous">
                                     <a id="txt-maquina12" class="nav-link">Remo</a>
                                   </li>
                               </ul>
+                            </div>
+                              
+                          </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 img-grande">
                             <img src="img/maquinas/maquina2.png">
                         </div>
                         <div class="row">
-                            <div class="col-sm-8" style="border: 1px solid black;">
+                            <div class="col-sm-8">
                                 <table class="table table-dark table-striped mt-2">
                                     <tr>
                                       <td>Tipo de ejercicio: Fuerza, resistencia.</td>
@@ -248,7 +237,7 @@ crossorigin="anonymous">
                                     </tr>
                                   </table>
                             </div>
-                            <div class="col-sm-4" style="border: 1px solid black;">
+                            <div class="col-sm-4">
                                 El banco Olympic Military Bench de Signature Series incorpora un soporte de protección moldeado de uretano que reduce el ruido y evita que la barra se desgaste con el fin de que el entrenamiento resulte estable y preciso. Tiene un sistema de soporte frontal y trasero para ofrecer más variedad. Los bancos y racks de Signature Series de calidad superior se integran a la perfección con otros equipos de la misma línea para completar una familia de productos dirigidos al entrenamiento de fuerza de alta calidad.
                             </div>
                         </div>
@@ -261,46 +250,54 @@ crossorigin="anonymous">
                     <div class="row">
                         <div class="col-sm-4">
                             <!-- lista -->
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                  <a id="txt-maquina1" class="nav-link" >Remo alto</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina3" class="nav-link" style="color: red; font-weight: bold;">Banco Plano</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="txt-maquina4" class="nav-link">Smith</a>
+                            <div class="navbar navbar-expand-sm navbar-light bg-light">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto flex-column">
+                                  <li class="nav-item">
+                                    <a id="txt-maquina1" class="nav-link" >Remo alto</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    <a id="txt-maquina3" class="nav-link" style="color: red; font-weight: bold;">Banco Plano</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina7" class="nav-link">Eliptico</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina9" class="nav-link">Poleas</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina10"  class="nav-link">Barras</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina11" class="nav-link">Core Bag</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina12" class="nav-link">Remo</a>
-                                  </li>
-                              </ul>
+                                      <a id="txt-maquina4" class="nav-link">Smith</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina7" class="nav-link">Eliptico</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina9" class="nav-link">Poleas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina10"  class="nav-link">Barras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina11" class="nav-link">Core Bag</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina12" class="nav-link">Remo</a>
+                                    </li>
+                                </ul>
+                              </div>
+                                
+                            </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 img-grande">
                             <!-- imagen -->
                             <img src="img/maquinas/maquina3.png">
                         </div>
@@ -336,46 +333,54 @@ crossorigin="anonymous">
                     <div class="row">
                         <div class="col-sm-4">
                             <!-- lista -->
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                  <a id="txt-maquina1" class="nav-link" >Remo alto</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina3" class="nav-link">Banco Plano</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="txt-maquina4" class="nav-link" style="color: red; font-weight: bold;">Smith</a>
+                            <div class="navbar navbar-expand-sm navbar-light bg-light">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto flex-column">
+                                  <li class="nav-item">
+                                    <a id="txt-maquina1" class="nav-link" >Remo alto</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    <a id="txt-maquina3" class="nav-link">Banco Plano</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina7" class="nav-link">Eliptico</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina9" class="nav-link">Poleas</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina10"  class="nav-link">Barras</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina11" class="nav-link">Core Bag</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina12" class="nav-link">Remo</a>
-                                  </li>
-                              </ul>
+                                      <a id="txt-maquina4" class="nav-link" style="color: red; font-weight: bold;">Smith</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina7" class="nav-link">Eliptico</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina9" class="nav-link">Poleas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina10"  class="nav-link">Barras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina11" class="nav-link">Core Bag</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina12" class="nav-link">Remo</a>
+                                    </li>
+                                </ul>
+                              </div>
+                                
+                            </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 img-grande">
                             <!-- imagen -->
                             <img src="img/maquinas/maquina4.png">
                         </div>
@@ -411,46 +416,54 @@ crossorigin="anonymous">
                     <div class="row">
                         <div class="col-sm-4">
                             <!-- lista -->
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                  <a id="txt-maquina1" class="nav-link" >Remo alto</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina3" class="nav-link">Banco Plano</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="txt-maquina4" class="nav-link">Smith</a>
+                            <div class="navbar navbar-expand-sm navbar-light bg-light">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto flex-column">
+                                  <li class="nav-item">
+                                    <a id="txt-maquina1" class="nav-link" >Remo alto</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina5" class="nav-link" style="color: red; font-weight: bold;">Bicicleta Recostada</a>
+                                    <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    <a id="txt-maquina3" class="nav-link">Banco Plano</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina7" class="nav-link">Eliptico</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina9" class="nav-link">Poleas</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina10"  class="nav-link">Barras</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina11" class="nav-link">Core Bag</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina12" class="nav-link">Remo</a>
-                                  </li>
-                              </ul>
+                                      <a id="txt-maquina4" class="nav-link">Smith</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina5" class="nav-link" style="color: red; font-weight: bold;">Bicicleta Recostada</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina7" class="nav-link">Eliptico</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina9" class="nav-link">Poleas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina10"  class="nav-link">Barras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina11" class="nav-link">Core Bag</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina12" class="nav-link">Remo</a>
+                                    </li>
+                                </ul>
+                              </div>
+                                
+                            </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 img-grande">
                             <!-- imagen -->
                             <img src="img/maquinas/maquina5.png">
                         </div>
@@ -486,46 +499,54 @@ crossorigin="anonymous">
                     <div class="row">
                         <div class="col-sm-4">
                             <!-- lista -->
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                  <a id="txt-maquina1" class="nav-link" >Remo alto</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina3" class="nav-link">Banco Plano</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="txt-maquina4" class="nav-link">Smith</a>
+                            <div class="navbar navbar-expand-sm navbar-light bg-light">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto flex-column">
+                                  <li class="nav-item">
+                                    <a id="txt-maquina1" class="nav-link" >Remo alto</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina6" class="nav-link" style="color: red; font-weight: bold;">Prensa 90°</a>
+                                    <a id="txt-maquina3" class="nav-link">Banco Plano</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina7" class="nav-link">Eliptico</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina9" class="nav-link">Poleas</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina10"  class="nav-link">Barras</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina11" class="nav-link">Core Bag</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina12" class="nav-link">Remo</a>
-                                  </li>
-                              </ul>
+                                      <a id="txt-maquina4" class="nav-link">Smith</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina6" class="nav-link" style="color: red; font-weight: bold;">Prensa 90°</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina7" class="nav-link">Eliptico</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina9" class="nav-link">Poleas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina10"  class="nav-link">Barras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina11" class="nav-link">Core Bag</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina12" class="nav-link">Remo</a>
+                                    </li>
+                                </ul>
+                              </div>
+                                
+                            </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 img-grande">
                             <!-- imagen -->
                             <img src="img/maquinas/maquina6.png">
                         </div>
@@ -562,46 +583,54 @@ crossorigin="anonymous">
                     <div class="row">
                         <div class="col-sm-4">
                             <!-- lista -->
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                  <a id="txt-maquina1" class="nav-link" >Remo alto</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina3" class="nav-link">Banco Plano</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="txt-maquina4" class="nav-link">Smith</a>
+                            <div class="navbar navbar-expand-sm navbar-light bg-light">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto flex-column">
+                                  <li class="nav-item">
+                                    <a id="txt-maquina1" class="nav-link" >Remo alto</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    <a id="txt-maquina3" class="nav-link">Banco Plano</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina7" class="nav-link" style="color: red; font-weight: bold;">Eliptico</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina9" class="nav-link">Poleas</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina10"  class="nav-link">Barras</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina11" class="nav-link">Core Bag</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina12" class="nav-link">Remo</a>
-                                  </li>
-                              </ul>
+                                      <a id="txt-maquina4" class="nav-link">Smith</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina7" class="nav-link" style="color: red; font-weight: bold;">Eliptico</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina9" class="nav-link">Poleas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina10"  class="nav-link">Barras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina11" class="nav-link">Core Bag</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina12" class="nav-link">Remo</a>
+                                    </li>
+                                </ul>
+                              </div>
+                                
+                            </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 img-grande">
                             <!-- imagen -->
                             <img src="img/maquinas/maquina7.png">
                         </div>
@@ -638,46 +667,54 @@ crossorigin="anonymous">
                     <div class="row">
                         <div class="col-sm-4">
                             <!-- lista -->
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                  <a id="txt-maquina1" class="nav-link" >Remo alto</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina3" class="nav-link">Banco Plano</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="txt-maquina4" class="nav-link">Smith</a>
+                            <div class="navbar navbar-expand-sm navbar-light bg-light">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto flex-column">
+                                  <li class="nav-item">
+                                    <a id="txt-maquina1" class="nav-link" >Remo alto</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    <a id="txt-maquina3" class="nav-link">Banco Plano</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina7" class="nav-link">Eliptico</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina8" class="nav-link" style="color: red; font-weight: bold;">Arc Trainer</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina9" class="nav-link">Poleas</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina10"  class="nav-link">Barras</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina11" class="nav-link">Core Bag</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina12" class="nav-link">Remo</a>
-                                  </li>
-                              </ul>
+                                      <a id="txt-maquina4" class="nav-link">Smith</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina7" class="nav-link">Eliptico</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina8" class="nav-link" style="color: red; font-weight: bold;">Arq. Trainer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina9" class="nav-link">Poleas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina10"  class="nav-link">Barras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina11" class="nav-link">Core Bag</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina12" class="nav-link">Remo</a>
+                                    </li>
+                                </ul>
+                              </div>
+                                
+                            </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 img-grande">
                             <!-- imagen -->
                             <img src="img/maquinas/maquina8.png">
                         </div>
@@ -714,46 +751,54 @@ crossorigin="anonymous">
                     <div class="row">
                         <div class="col-sm-4">
                             <!-- lista -->
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                  <a id="txt-maquina1" class="nav-link" >Remo alto</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina3" class="nav-link">Banco Plano</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="txt-maquina4" class="nav-link">Smith</a>
+                            <div class="navbar navbar-expand-sm navbar-light bg-light">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto flex-column">
+                                  <li class="nav-item">
+                                    <a id="txt-maquina1" class="nav-link">Remo alto</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    <a id="txt-maquina3" class="nav-link">Banco Plano</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina7" class="nav-link">Eliptico</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina9" class="nav-link" style="color: red; font-weight: bold;">Poleas</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina10"  class="nav-link">Barras</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina11" class="nav-link">Core Bag</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina12" class="nav-link">Remo</a>
-                                  </li>
-                              </ul>
+                                      <a id="txt-maquina4" class="nav-link">Smith</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina7" class="nav-link">Eliptico</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina9" class="nav-link" style="color: red; font-weight: bold;">Poleas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina10"  class="nav-link">Barras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina11" class="nav-link">Core Bag</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina12" class="nav-link">Remo</a>
+                                    </li>
+                                </ul>
+                              </div>
+                                
+                            </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 img-grande">
                             <!-- imagen -->
                             <img src="img/maquinas/maquina9.png">
                         </div>
@@ -790,46 +835,54 @@ crossorigin="anonymous">
                     <div class="row">
                         <div class="col-sm-4">
                             <!-- lista -->
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                  <a id="txt-maquina1" class="nav-link" >Remo alto</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina3" class="nav-link">Banco Plano</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="txt-maquina4" class="nav-link">Smith</a>
+                            <div class="navbar navbar-expand-sm navbar-light bg-light">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto flex-column">
+                                  <li class="nav-item">
+                                    <a id="txt-maquina1" class="nav-link" >Remo alto</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    <a id="txt-maquina3" class="nav-link">Banco Plano</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina7" class="nav-link">Eliptico</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina9" class="nav-link">Poleas</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina10"  class="nav-link" style="color: red; font-weight: bold;">Barras</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina11" class="nav-link">Core Bag</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina12" class="nav-link">Remo</a>
-                                  </li>
-                              </ul>
+                                      <a id="txt-maquina4" class="nav-link">Smith</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina7" class="nav-link">Eliptico</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina9" class="nav-link">Poleas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina10"  class="nav-link" style="color: red; font-weight: bold;">Barras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina11" class="nav-link">Core Bag</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina12" class="nav-link">Remo</a>
+                                    </li>
+                                </ul>
+                              </div>
+                                
+                            </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 img-grande">
                             <!-- imagen -->
                             <img src="img/maquinas/maquina10.png">
                         </div>
@@ -866,48 +919,56 @@ crossorigin="anonymous">
                     <div class="row">
                         <div class="col-sm-4">
                             <!-- lista -->
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                  <a id="txt-maquina1" class="nav-link" >Remo alto</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina3" class="nav-link">Banco Plano</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="txt-maquina4" class="nav-link">Smith</a>
+                            <div class="navbar navbar-expand-sm navbar-light bg-light">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto flex-column">
+                                  <li class="nav-item">
+                                    <a id="txt-maquina1" class="nav-link">Remo alto</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    <a id="txt-maquina3" class="nav-link">Banco Plano</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina7" class="nav-link">Eliptico</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina9" class="nav-link">Poleas</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina10"  class="nav-link">Barras</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina11" class="nav-link" style="color: red; font-weight: bold;">Core Bag</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina12" class="nav-link">Remo</a>
-                                  </li>
-                              </ul>
+                                      <a id="txt-maquina4" class="nav-link">Smith</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina7" class="nav-link">Eliptico</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina9" class="nav-link">Poleas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina10"  class="nav-link">Barras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina11" class="nav-link" style="color: red; font-weight: bold;">Core Bag</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina12" class="nav-link">Remo</a>
+                                    </li>
+                                </ul>
+                              </div>
+                                
+                            </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 img-grande">
                             <!-- imagen -->
-                            <img src="img/maquinas/maquina1.png">
+                            <img src="img/maquinas/maquina11.png">
                         </div>
                     </div>
                     <div class="row">
@@ -942,46 +1003,54 @@ crossorigin="anonymous">
                     <div class="row">
                         <div class="col-sm-4">
                             <!-- lista -->
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                  <a id="txt-maquina1" class="nav-link" >Remo alto</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="txt-maquina3" class="nav-link">Banco Plano</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="txt-maquina4" class="nav-link">Smith</a>
+                            <div class="navbar navbar-expand-sm navbar-light bg-light">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto flex-column">
+                                  <li class="nav-item">
+                                    <a id="txt-maquina1" class="nav-link" >Remo alto</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    <a id="txt-maquina2" class="nav-link" >Press de Hombros</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    <a id="txt-maquina3" class="nav-link">Banco Plano</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a id="txt-maquina7" class="nav-link">Eliptico</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina9" class="nav-link">Poleas</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina10"  class="nav-link">Barras</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina11" class="nav-link">Core Bag</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a id="txt-maquina12" class="nav-link" style="color: red; font-weight: bold;">Remo</a>
-                                  </li>
-                              </ul>
+                                      <a id="txt-maquina4" class="nav-link">Smith</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina5" class="nav-link">Bicicleta Recostada</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina6" class="nav-link">Prensa 90°</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina7" class="nav-link">Eliptico</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina8" class="nav-link">Arq. Trainer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina9" class="nav-link">Poleas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina10"  class="nav-link">Barras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina11" class="nav-link">Core Bag</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a id="txt-maquina12" class="nav-link" style="color: red; font-weight: bold;">Remo</a>
+                                    </li>
+                                </ul>
+                              </div>
+                                
+                            </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 img-grande">
                             <!-- imagen -->
                             <img src="img/maquinas/maquina12.png">
                         </div>
