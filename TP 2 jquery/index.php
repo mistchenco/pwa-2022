@@ -16,7 +16,7 @@
       <h1>Ejercicio 1</h1>
     </div>
    
-    <p>Elige un vídeo según la lista de reproducción:</p>
+    <p>Selecciona una rutina para ver sus ejercicios</p>
     <div class="row">
       <div class="col-md-4">
           <p>Ejercicios
