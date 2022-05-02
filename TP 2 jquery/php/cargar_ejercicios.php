@@ -1,16 +1,13 @@
 <?php 
-require_once 'conexion.php';
-
 function getListasrutina(){
-  $base = new BaseDatos();
-  $base-> Iniciar();
+  $conexion=mysqli_connect('localhost','root','','gimnasio');
   $query = 'SELECT * FROM `ejercicio`';
  
-$result = $base->query($query);
+  $result=mysqli_query($conexion,$query);
   
   $listas = '<option value="0">Elige una opción</option>';
-  while($row = $result->fetch(MYSQLI_ASSOC)){
-    $listas .= "<option value='$row[idRutina]'>$row[rutina]</option>";
+  while($row = mysqli_fetch_row($result)){
+    $listas .= "<option value='".$row[0]."'>".$row[1]."</option>";
   }
   return $listas;
 }
