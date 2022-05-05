@@ -5,9 +5,10 @@ $(document).ready(function(){
 
 
     $('.txt-maquina1').on('click',function(){
-        $.getJSON('http://localhost/pwa/tp2%20Jquery/php/cargar_modal.php',function(data){
-            //console.log(data);
+        $.getJSON('http://localhost/pwa/pwa-2022/TP%202%20jquery/php/cargar_modal.php',function(data){
+            console.log(data);
             $.each(data, function (index,item){
+                console.log(item);
                 if (item.idMod==1){
                     $('.modal-title').html(item.titulo),
                     $('.modal-body').html(item.texto),
@@ -22,7 +23,7 @@ $(document).ready(function(){
         
     });
     $('.txt-maquina2').on('click',function(){
-        $.getJSON('http://localhost/pwa/tp2%20Jquery/php/cargar_modal.php',function(data){
+        $.getJSON('http://localhost/pwa/pwa-2022/TP%202%20jquery/php/cargar_modal.php',function(data){
             //console.log(data);
             $.each(data, function (index,item){
                 if (item.idMod==2){
@@ -38,7 +39,7 @@ $(document).ready(function(){
         $('#exampleModal').modal('show')
     });
     $('.txt-maquina3').on('click',function(){
-        $.getJSON('http://localhost/pwa/tp2%20Jquery/php/cargar_modal.php',function(data){
+        $.getJSON('http://localhost/pwa/pwa-2022/TP%202%20jquery/php/cargar_modal.php',function(data){
             //console.log(data);
             $.each(data, function (index,item){
                 if (item.idMod==3){
@@ -54,7 +55,7 @@ $(document).ready(function(){
         $('#exampleModal').modal('show')
     });
     $('.txt-maquina4').on('click',function(){
-        $.getJSON('http://localhost/pwa/tp2%20Jquery/php/cargar_modal.php',function(data){
+        $.getJSON('http://localhost/pwa/pwa-2022/TP%202%20jquery/php/cargar_modal.php',function(data){
             //console.log(data);
             $.each(data, function (index,item){
                 if (item.idMod==4){
@@ -70,7 +71,7 @@ $(document).ready(function(){
         $('#exampleModal').modal('show')
     });
     $('.txt-maquina5').on('click',function(){
-        $.getJSON('http://localhost/pwa/tp2%20Jquery/php/cargar_modal.php',function(data){
+        $.getJSON('http://localhost/pwa/pwa-2022/TP%202%20jquery/php/cargar_modal.php',function(data){
             //console.log(data);
             $.each(data, function (index,item){
                 if (item.idMod==5){
@@ -86,7 +87,7 @@ $(document).ready(function(){
         $('#exampleModal').modal('show')
     });
     $('.txt-maquina6').on('click',function(){
-        $.getJSON('http://localhost/pwa/tp2%20Jquery/php/cargar_modal.php',function(data){
+        $.getJSON('http://localhost/pwa/pwa-2022/TP%202%20jquery/php/cargar_modal.php',function(data){
             //console.log(data);
             $.each(data, function (index,item){
                 if (item.idMod==6){
@@ -102,7 +103,7 @@ $(document).ready(function(){
         $('#exampleModal').modal('show')
     });
     $('.txt-maquina7').on('click',function(){
-        $.getJSON('http://localhost/pwa/tp2%20Jquery/php/cargar_modal.php',function(data){
+        $.getJSON('http://localhost/pwa/pwa-2022/TP%202%20jquery/php/cargar_modal.php',function(data){
             //console.log(data);
             $.each(data, function (index,item){
                 if (item.idMod==7){
@@ -118,7 +119,7 @@ $(document).ready(function(){
         $('#exampleModal').modal('show')
     });
     $('.txt-maquina8').on('click',function(){
-        $.getJSON('http://localhost/pwa/tp2%20Jquery/php/cargar_modal.php',function(data){
+        $.getJSON('http://localhost/pwa/pwa-2022/TP%202%20jquery/php/cargar_modal.php',function(data){
             //console.log(data);
             $.each(data, function (index,item){
                 if (item.idMod==8){
@@ -134,7 +135,7 @@ $(document).ready(function(){
         $('#exampleModal').modal('show')
     });
     $('.txt-maquina9').on('click',function(){
-        $.getJSON('http://localhost/pwa/tp2%20Jquery/php/cargar_modal.php',function(data){
+        $.getJSON('http://localhost/pwa/pwa-2022/TP%202%20jquery/php/cargar_modal.php',function(data){
             //console.log(data);
             $.each(data, function (index,item){
                 if (item.idMod==9){
@@ -150,7 +151,7 @@ $(document).ready(function(){
         $('#exampleModal').modal('show')
     });
     $('.txt-maquina10').on('click',function(){
-        $.getJSON('http://localhost/pwa/tp2%20Jquery/php/cargar_modal.php',function(data){
+        $.getJSON('http://localhost/pwa/pwa-2022/TP%202%20jquery/php/cargar_modal.php',function(data){
             //console.log(data);
             $.each(data, function (index,item){
                 if (item.idMod==10){
@@ -166,7 +167,7 @@ $(document).ready(function(){
         $('#exampleModal').modal('show')
     });
     $('.txt-maquina11').on('click',function(){
-        $.getJSON('http://localhost/pwa/tp2%20Jquery/php/cargar_modal.php',function(data){
+        $.getJSON('http://localhost/pwa/pwa-2022/TP%202%20jquery/php/cargar_modal.php',function(data){
             //console.log(data);
             $.each(data, function (index,item){
                 if (item.idMod==11){
@@ -182,7 +183,7 @@ $(document).ready(function(){
         $('#exampleModal').modal('show')
     });
     $('.txt-maquina12').on('click',function(){
-        $.getJSON('http://localhost/pwa/tp2%20Jquery/php/cargar_modal.php',function(data){
+        $.getJSON('http://localhost/pwa/pwa-2022/TP%202%20jquery/php/cargar_modal.php',function(data){
             //console.log(data);
             $.each(data, function (index,item){
                 if (item.idMod==12){

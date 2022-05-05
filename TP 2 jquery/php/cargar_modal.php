@@ -3,7 +3,7 @@
     //$id = $_POST['id'];
     //$query = "SELECT * FROM modal WHERE idModal=$id";
     $query= "SELECT * FROM modal";
-   
+//    echo $query;
     $arreglo=[];
     if ($result=$conexion->query($query)){
         while($row= $result->fetch_array(MYSQLI_ASSOC)){
