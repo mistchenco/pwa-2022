@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio6 - TP JQuery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+crossorigin="anonymous">
+<style>
+  .msjErr{
+    color: red;
+  }
+  #sugerencia{
+      color:blue;
+  }
+</style>
+</head>
+<body>
+    <form style="border: 1px solid gray; width: 500px; margin: auto;" method="post" id="formu" class="mt-5 p-3 needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Jack Sparrow" required>
+          <div id="nombre-feed" class="msjErr"></div>
+        </div>
+        <div class="mb-3">
+            <label for="empresa" class="form-label">Empresa:</label>
+            <input type="text" class="form-control" id="empresa" placeholder="pirateorg" required>
+            <div id="empresa-feed" class="msjErr"></div>
+        </div>
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Telefono:</label>
+            <input type="text" class="form-control" id="telefono" placeholder="2984211456" required>
+            <div id="telefono-feed" class="msjErr"></div>
+          </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="email@gmail.com" required>
+            <div id="email-feed" class="msjErr"></div>
+        </div>  
+        <div class="mb-3">
+            <label for="provincia" class="form-label">Provincia:</label>
+            <input type="text" class="form-control" id="provincia" placeholder="Tortuga" required>
+            <div id="sugerencia"></div>
+        </div>  
+        <div class="mb-3">
+            <label for="comentario" class="form-label">Comentarios:</label>
+            <textarea class="form-control" id="comentario" rows="3" style="max-height: 100px;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
+        <button class="btn btn-danger" id="borrar">Borrar</button>
+    </form>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="js/ej6.js"></script>
+</body>
+</html>
