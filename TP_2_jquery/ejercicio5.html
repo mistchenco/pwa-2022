@@ -216,12 +216,15 @@
         </tbody>
       </table>
       <div class="row mt-5">
-        <button class="btn btn-outline-primary col-2" id="ant">Anterior</button>
-        <button class="btn btn-outline-primary col-2" id="sig">
-          Siguiente
-        </button>
+        <button class="btn btn-outline-primary col-2 d-none" id="ant">Anterior</button>
+        <button class="btn btn-outline-primary col-2 d-none" id="sig">Siguiente</button>
       </div>
     </div>
+    
+    <input id="contUs" type="hidden">
+    <input id="cantUs" type="hidden">
+    <input id="cantPag" type="hidden">
+    <input id="pagActual" type="hidden">
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
