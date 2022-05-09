@@ -1,6 +1,6 @@
 //Validacion de usuario preexistente
 $('#nombre').on('change',function(){
-    //$('#nombre-feed').html('');
+    $('#nombre-feed').html('');
     $.getJSON('./php/leer_usuarios.php',function(data){
         var $nombre=document.getElementById('nombre').value;
         $nombre=$nombre.toLowerCase();
@@ -49,6 +49,29 @@ $('#enviar').on('click',function(){
             alert(info);
             location.reload();
         })
+    }
+});
+
+//Con la presion de una tecla se activa la funcion que usa el/los caracter/es para buscar en la bd aquellas palabras que comienzen de la misma forma.
+$('#provincia').keyup(function(){
+    var provincia = document.getElementById("provincia").value;
+    var xmlhttp;
+    if (window.XMLHttpRequest){
+        xmlhttp= new XMLHttpRequest();
+    }else{
+        xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    if (provincia.length===""){
+        $("#sugerencia").html("");
+    }else{
+        xmlhttp.onreadystatechange = function(){
+            if (xmlhttp.readyState === 4 && this.status === 200){
+                $("#sugerencia").html(xmlhttp.responseText);
+            }
+        }
+        xmlhttp.open("GET","./php/sugerencia.php?provincia=" +provincia,true);
+        xmlhttp.send();
     }
 });
 
